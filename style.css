@@ -8,8 +8,11 @@
 
 body {
   text-transform: uppercase;
-  background: #fff url("../images/body-bg2.jpg") 0 0 no-repeat;
-  background-size: 100vh;
+  /* background: #fff url("../images/body-bg2.jpg") 0 0 no-repeat; */
+  background: no-repeat;
+  background-image: url("../images/body-bg2.jpg");
+  background-size: cover;
+  height: 100vh;
   background-attachment: fixed;
   color: #000;
 }
@@ -20,6 +23,7 @@ body {
   max-width: 43.75rem;
   padding: 1.875rem 3.4375rem 1.25rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 #masthead span {
@@ -89,6 +93,7 @@ video {
   margin-left: 17.8125rem;
   max-width: 43.75rem;
   padding: 0 3.4375rem;
+  padding-bottom: 2rem;
 }
 
 #main > iframe {
@@ -173,11 +178,21 @@ footer {
 
   #masthead {
     margin-left: 10%;
+    max-width: 40rem;
+  }
+
+  #masthead h2 {
+    font-size: 2.1rem;
+  }
+
+  .btn {
+    font-size: 1.2rem;
   }
 
   #main,
   #footer  {
     margin-left: 10%;
+    max-width: 40rem;
   }
 }
 
